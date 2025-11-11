@@ -82,7 +82,7 @@ class APISubscriber:
         except Exception as e:
             print(f"❌ Error connecting to publisher: {e}")
     
-    def start_listening(self, max_messages: int = 10):
+    def start_listening(self, max_messages: int = 100):
         """Start listening for messages"""
         if not self.socket:
             print("❌ Not connected to any publisher. Call register() first.")
